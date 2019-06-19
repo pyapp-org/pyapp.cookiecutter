@@ -1,0 +1,15 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = "*"
+
+[packages]
+pyApp = ">=4.0"
+{% if cookiecutter.use_sqlalchemy %}pyApp-SQLAlchemy = "*"{% endif %}
+{% if cookiecutter.use_smtp %}pyApp-SMTP = "*"{% endif %}
+
+[requires]
+python_version = ">=3.6"

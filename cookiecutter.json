@@ -1,0 +1,7 @@
+{
+  "project_name": "My Project",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "project_version": "0.1",
+  "use_sqlalchemy": {"y": true, "n": false},
+  "use_smtp": {"n": false, "y": true}
+}

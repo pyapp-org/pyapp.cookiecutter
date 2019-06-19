@@ -1,0 +1,7 @@
+"""
+{{ cookiecutter.project_name }}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+"""
+
+__version__ = "{{ cookiecutter.project_version }}"
