@@ -7,7 +7,7 @@ verify_ssl = true
 pytest = "*"
 
 [packages]
-pyApp = ">=4.0"
+pyApp = "~=4.0"
 {% if cookiecutter.use_sqlalchemy %}pyApp-SQLAlchemy = "*"{% endif %}
 {% if cookiecutter.use_smtp %}pyApp-SMTP = "*"{% endif %}
 
