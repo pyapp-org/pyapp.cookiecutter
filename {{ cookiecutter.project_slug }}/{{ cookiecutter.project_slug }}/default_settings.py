@@ -1,7 +1,7 @@
 # Enable "debug" mode
 DEBUG = True
 
-{% if cookiecutter.use_sqlalchemy %}
+{% if cookiecutter.use_sqlalchemy == "y" %}
 ##############################################################################
 # Database Engines
 
@@ -23,7 +23,7 @@ Example settings::
 """
 
 
-{% endif %}{% if cookiecutter.use_smtp %}
+{% endif %}{% if cookiecutter.use_smtp == "y" %}
 ##############################################################################
 # SMTP Host
 
