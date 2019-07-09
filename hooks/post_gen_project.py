@@ -15,5 +15,5 @@ if __name__ == "__main__":
     else:
         remove_file("tests/conftest.py")
 
-    if 'Not open source' == '{{ cookiecutter.open_source_license }}':
-        remove_file('LICENSE')
+    if "Not open source" == "{{ cookiecutter.open_source_license }}":
+        remove_file("LICENSE")
