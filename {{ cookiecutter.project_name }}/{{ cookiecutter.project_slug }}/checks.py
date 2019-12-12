@@ -2,6 +2,7 @@
 Application Specific Checks
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 """
+
 from pyapp import checks
 from pyapp.conf import Settings
 
