@@ -7,5 +7,8 @@ Welcome to your pyApp project!
 Getting Started
 ===============
 
-Application is ready to execute. Use `python -m {{ cookiecutter.project_slug }}`
+Install required dependencies with ``pipenv install``.
+
+Application is ready to execute. Use ``pipenv run python -m {{ cookiecutter.project_slug }}``
 to test the CLI.
+

@@ -28,3 +28,8 @@ def main(args: Sequence[str] = None):
     Main application entry point
     """
     app.dispatch(args)
+
+
+if __name__ == "__main__":
+    main()
+
