@@ -1,35 +1,33 @@
 """
-CLI
-~~~
+Main CLI
+~~~~~~~~
 
 Definition of {{ cookiecutter.project_name }} CLI.
 
 """
 
 from pyapp.app import CliApplication, argument, CommandOptions
-from typing import Sequence
-
-app = CliApplication()
 
 
-@app.command
+APP = CliApplication()
+main = APP.dispatch
+
+
+@APP.command
 @argument("-n", "--name", default="Dave")
 def hello(opts: CommandOptions):
     """
     Say hello
     """
     # Do command imports locally to improve startup time!
-
     print(f"Hello {opts.name}")
 
 
-def main(args: Sequence[str] = None):
+@APP.command(name="hello-async")
+@argument("-n", "--name", default="Jane")
+async def hello_async(opts: CommandOptions):
     """
-    Main application entry point
+    Say hello in an AsyncIO run-loop
     """
-    app.dispatch(args)
-
-
-if __name__ == "__main__":
-    main()
-
+    # Do command imports locally to improve startup time!
+    print(f"Hello {opts.name}")

@@ -9,6 +9,6 @@ Getting Started
 
 Install required dependencies with ``pipenv install``.
 
-Application is ready to execute. Use ``pipenv run python -m {{ cookiecutter.project_slug }}``
-to test the CLI.
+Application is ready to execute from the `src` folder. Use 
+``pipenv run python -m {{ cookiecutter.project_slug }}`` to use the CLI.
 

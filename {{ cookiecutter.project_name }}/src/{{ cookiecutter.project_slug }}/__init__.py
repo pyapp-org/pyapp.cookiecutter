@@ -4,6 +4,5 @@
 
 """
 
-from .__version__ import __version__
-
+__version__ = "{{ cookiecutter.project_version }}"
 __author__ = "{{ cookiecutter.full_name }}"

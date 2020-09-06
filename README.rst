@@ -1,8 +1,8 @@
-###################################
-pyApp Project Cookiecutter template
-###################################
+#######################################
+pyApp Application Cookiecutter Template
+#######################################
 
-Provides a basic application to get you up and running using pyApp.
+Provides a basic application to get you up and running with pyApp.
 
 Using::
 
@@ -10,5 +10,5 @@ Using::
     pip install cookiecutter
 
     # Generate your project
-    cookiecutter path/to/pyapp.cookiecutter
+    cookiecutter https://github.com/pyapp-org/pyapp.cookiecutter
 

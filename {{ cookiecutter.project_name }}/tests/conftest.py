@@ -1,8 +1,8 @@
-import pytest
-
 from pathlib import Path
 
+import pytest
 from pyapp.conf import settings
+
 
 # Ensure settings are configured
 settings.configure(["tests.settings_test"])

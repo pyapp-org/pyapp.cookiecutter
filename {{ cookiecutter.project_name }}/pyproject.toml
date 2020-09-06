@@ -1,0 +1,29 @@
+[build-system]
+requires = ["poetry>=1.0", "rtd-poetry-tmp"]
+build-backend = "rtd_poetry"
+
+[tool.poetry]
+name = "{{cookiecutter.project_name}}"
+version = "{{cookiecutter.project_version}}"
+description = "{{cookiecutter.project_description}}"
+authors = ["{{cookiecutter.full_name}} <{{cookiecutter.email}}>"]
+license = "{{cookiecutter.open_source_license}}"
+readme = "README.rst"
+repository = ""
+documentation = ""
+keywords = []
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+packages = [
+    { include = "{{cookiecutter.project_slug}}" },
+    { include = "tests", format = "sdist" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+pyapp = "^4.3"
+colorama = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.0.1"
